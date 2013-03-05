@@ -1,0 +1,12 @@
+Source: ros-groovy-urg-node
+Section: misc
+Priority: extra
+Maintainer: Chad Rockey <chadrockey@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-catkin, ros-groovy-dynamic-reconfigure, ros-groovy-laser-proc, ros-groovy-nodelet, ros-groovy-rosconsole, ros-groovy-roscpp, ros-groovy-sensor-msgs, ros-groovy-tf, ros-groovy-urg-c
+Homepage: http://ros.org/wiki/urg_node
+Standards-Version: 3.9.2
+
+Package: ros-groovy-urg-node
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-dynamic-reconfigure, ros-groovy-laser-proc, ros-groovy-nodelet, ros-groovy-rosconsole, ros-groovy-roscpp, ros-groovy-sensor-msgs, ros-groovy-tf, ros-groovy-urg-c
+Description: urg_node
