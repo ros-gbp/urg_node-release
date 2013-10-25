@@ -1,0 +1,12 @@
+Source: ros-hydro-urg-node
+Section: misc
+Priority: extra
+Maintainer: Chad Rockey <chadrockey@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin, ros-hydro-diagnostic-updater, ros-hydro-dynamic-reconfigure, ros-hydro-laser-proc, ros-hydro-nodelet, ros-hydro-rosconsole, ros-hydro-roscpp, ros-hydro-sensor-msgs, ros-hydro-tf, ros-hydro-urg-c
+Homepage: http://ros.org/wiki/urg_node
+Standards-Version: 3.9.2
+
+Package: ros-hydro-urg-node
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-diagnostic-updater, ros-hydro-dynamic-reconfigure, ros-hydro-laser-proc, ros-hydro-nodelet, ros-hydro-rosconsole, ros-hydro-roscpp, ros-hydro-sensor-msgs, ros-hydro-tf, ros-hydro-urg-c
+Description: urg_node
