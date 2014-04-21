@@ -1,0 +1,12 @@
+Source: ros-indigo-urg-node
+Section: misc
+Priority: extra
+Maintainer: Chad Rockey <chadrockey@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-indigo-catkin, ros-indigo-diagnostic-updater, ros-indigo-dynamic-reconfigure, ros-indigo-laser-proc, ros-indigo-nodelet, ros-indigo-rosconsole, ros-indigo-roscpp, ros-indigo-sensor-msgs, ros-indigo-tf, ros-indigo-urg-c
+Homepage: http://ros.org/wiki/urg_node
+Standards-Version: 3.9.2
+
+Package: ros-indigo-urg-node
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-diagnostic-updater, ros-indigo-dynamic-reconfigure, ros-indigo-laser-proc, ros-indigo-nodelet, ros-indigo-rosconsole, ros-indigo-roscpp, ros-indigo-sensor-msgs, ros-indigo-tf, ros-indigo-urg-c
+Description: urg_node
