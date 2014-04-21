@@ -1,3 +1,22 @@
+## repository_name (indigo) - 0.1.7-0
+
+The packages in the `repository_name` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --rosdistro indigo --track indigo repository_name --edit` on `Mon, 21 Apr 2014 22:35:38 -0000`
+
+The `urg_node` package was released.
+
+Version of package(s) in repository `repository_name`:
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.1.7-0`
+
+Versions of tools used:
+- bloom version: `0.5.4`
+- catkin_pkg version: `0.2.1`
+- rosdep version: `0.10.27`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.33`
+
+
 ## urg_node (hydro) - 0.1.7-0
 
 The packages in the `urg_node` repository were released into the `hydro` distro by running `/usr/bin/bloom-release urg_node --track hydro --rosdistro hydro` on `Mon, 21 Apr 2014 22:32:57 -0000`
