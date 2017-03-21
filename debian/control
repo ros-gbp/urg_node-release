@@ -1,0 +1,12 @@
+Source: ros-jade-urg-node
+Section: misc
+Priority: extra
+Maintainer: Tony Baltovski <tony.baltovski@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-diagnostic-updater, ros-jade-dynamic-reconfigure, ros-jade-laser-proc, ros-jade-nodelet, ros-jade-rosconsole, ros-jade-roscpp, ros-jade-sensor-msgs, ros-jade-tf, ros-jade-urg-c
+Homepage: http://ros.org/wiki/urg_node
+Standards-Version: 3.9.2
+
+Package: ros-jade-urg-node
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-diagnostic-updater, ros-jade-dynamic-reconfigure, ros-jade-laser-proc, ros-jade-nodelet, ros-jade-rosconsole, ros-jade-roscpp, ros-jade-sensor-msgs, ros-jade-tf, ros-jade-urg-c
+Description: urg_node
