@@ -1,3 +1,26 @@
+## urg_node (kinetic) - 0.1.10-0
+
+The packages in the `urg_node` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -r kinetic -t kinetic urg_node` on `Tue, 21 Mar 2017 21:38:10 -0000`
+
+The `urg_node` package was released.
+
+Version of package(s) in repository `urg_node`:
+
+- upstream repository: https://github.com/ros-drivers/urg_node.git
+- release repository: https://github.com/ros-gbp/urg_node-release.git
+- rosdistro version: `0.1.9-0`
+- old version: `0.1.9-0`
+- new version: `0.1.10-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.25`
+- catkin_pkg version: `0.3.1`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.6.1`
+- vcstools version: `0.1.39`
+
+
 ## urg_node (jade) - 0.1.10-0
 
 The packages in the `urg_node` repository were released into the `jade` distro by running `/usr/bin/bloom-release -r jade -t jade urg_node` on `Tue, 21 Mar 2017 21:35:40 -0000`
