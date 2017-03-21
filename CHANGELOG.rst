@@ -2,6 +2,14 @@
 Changelog for package urg_node
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.10 (2017-03-21)
+-------------------
+* Updated maintainer.
+* Error handling for connection failures
+* Created urg_lidar.launch
+* Installed getID
+* Contributors: Eric Tappan, Jeff Schmidt, Kei Okada, Tony Baltovski
+
 0.1.9 (2014-08-13)
 ------------------
 * Merge pull request `#7 <https://github.com/ros-drivers/urg_node/issues/7>`_ from mikeferguson/indigo-devel
