@@ -1,3 +1,26 @@
+## urg_node (indigo) - 0.1.11-1
+
+The packages in the `urg_node` repository were released into the `indigo` distro by running `/usr/bin/bloom-release urg_node --track indigo --rosdistro indigo` on `Tue, 17 Oct 2017 19:46:32 -0000`
+
+The `urg_node` package was released.
+
+Version of package(s) in repository `urg_node`:
+
+- upstream repository: https://github.com/ros-drivers/urg_node.git
+- release repository: https://github.com/ros-gbp/urg_node-release.git
+- rosdistro version: `0.1.10-0`
+- old version: `0.1.11-0`
+- new version: `0.1.11-1`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.7`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## urg_node (indigo) - 0.1.11-0
 
 The packages in the `urg_node` repository were released into the `indigo` distro by running `/usr/bin/bloom-release urg_node --track indigo --rosdistro indigo` on `Tue, 17 Oct 2017 19:45:14 -0000`
