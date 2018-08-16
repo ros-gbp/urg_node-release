@@ -1,3 +1,26 @@
+## urg_node (lunar) - 0.1.11-0
+
+The packages in the `urg_node` repository were released into the `lunar` distro by running `/usr/bin/bloom-release urg_node -t lunar -r lunar --new-track` on `Thu, 16 Aug 2018 15:13:41 -0000`
+
+The `urg_node` package was released.
+
+Version of package(s) in repository `urg_node`:
+
+- upstream repository: https://github.com/ros-drivers/urg_node.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.1.11-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.6`
+- catkin_pkg version: `0.4.8`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.9`
+- vcstools version: `0.1.40`
+
+
 ## urg_node (kinetic) - 0.1.11-0
 
 The packages in the `urg_node` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release urg_node --track kinetic --rosdistro kinetic` on `Tue, 17 Oct 2017 19:52:43 -0000`
