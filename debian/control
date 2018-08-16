@@ -1,0 +1,12 @@
+Source: ros-lunar-urg-node
+Section: misc
+Priority: extra
+Maintainer: Tony Baltovski <tony.baltovski@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin, ros-lunar-diagnostic-updater, ros-lunar-dynamic-reconfigure, ros-lunar-laser-proc, ros-lunar-message-generation, ros-lunar-nodelet, ros-lunar-rosconsole, ros-lunar-roscpp, ros-lunar-roslaunch, ros-lunar-roslint, ros-lunar-sensor-msgs, ros-lunar-std-msgs, ros-lunar-std-srvs, ros-lunar-tf, ros-lunar-urg-c
+Homepage: http://ros.org/wiki/urg_node
+Standards-Version: 3.9.2
+
+Package: ros-lunar-urg-node
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-diagnostic-updater, ros-lunar-dynamic-reconfigure, ros-lunar-laser-proc, ros-lunar-message-generation, ros-lunar-message-runtime, ros-lunar-nodelet, ros-lunar-rosconsole, ros-lunar-roscpp, ros-lunar-sensor-msgs, ros-lunar-std-msgs, ros-lunar-std-srvs, ros-lunar-tf, ros-lunar-urg-c
+Description: urg_node

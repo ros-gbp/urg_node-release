@@ -1,0 +1,140 @@
+ros-lunar-urg-node (0.1.11-0stretch) stretch; urgency=high
+
+  * Add support for URG-04LX in SCIP 1.1 mode
+    The urg_node does not support SCIP 1.1. The Hokuyo URG-04LX supports both
+    SCIP 1.1 and SCIP 2.0, but needs to be switched to SCIP 2.0 at every startup
+    in its default configuration. For this purpose the function
+    URGCWrapper::setToSCIP2() was added.
+    A URG-04LX in SCIP 1.1 mode used to lead to an exception being thrown in
+    URGCwrapper::initialize. Now, before throwing the exception an attempt to
+    switch the sensor to SCIP 2.0 is made.
+  * Fixed comments in launch file and added roslaunch.
+  * Add flag to prevent updating of detailed status.
+    If using a model that does not support AR00 command, hide it
+    behind a rosparam.
+  * Add safety stop heading and distance values (#28 <https://github.com/ros-drivers/urg_node/issues/28>)
+    Added to the laser status field the last report of a safety
+    stop of distance and angle reported. If this fails or is unavailable
+    it will just report 0.
+  * Updating depend and roslint.
+    Fixing some roslint error after moving a header name.
+    Additionally fixing the gencfg to be on the lib and not the node.
+  * Adding missing std_srvs depend.
+    Adding missing std_srvs depend to package.xml and CMakelists.txt
+  * Move urg_node to be a library.
+    Moving urg_node to urg_node_driver as a library.
+    This allows for other nodes to include this as an object instead
+    of spawning another separate process.
+  * Add getAR00 status command.
+    Added ability to pull the status of the lidar AR00 status command.
+    This then publishes a latched topic with the current status of the
+    lidar's error code and lockout status.
+  * Update urg_node to be a self contained class
+    Updating urg node to be a self contained class. This allows
+    for it to be imported in other nodes.
+  * Roslint
+  * Contributors: Benjamin Scholz, Mike O'Driscoll, Tony Baltovski
+
+ -- Tony Baltovski <tony.baltovski@gmail.com>  Tue, 17 Oct 2017 04:00:00 -0000
+
+ros-lunar-urg-node (0.1.10-0stretch) stretch; urgency=high
+
+  * Updated maintainer.
+  * Error handling for connection failures
+  * Created urg_lidar.launch
+  * Installed getID
+  * Contributors: Eric Tappan, Jeff Schmidt, Kei Okada, Tony Baltovski
+
+ -- Tony Baltovski <tony.baltovski@gmail.com>  Tue, 21 Mar 2017 04:00:00 -0000
+
+ros-lunar-urg-node (0.1.9-0stretch) stretch; urgency=high
+
+  * Merge pull request #7 <https://github.com/ros-drivers/urg_node/issues/7> from mikeferguson/indigo-devel
+    add a script to set the IP address of an URG laser
+  * Updated diagnostics to support configurable parameters.
+  * add a script to set the IP address of an URG laser
+  * Contributors: Chad Rockey, Michael Ferguson
+
+ -- Tony Baltovski <tony.baltovski@gmail.com>  Wed, 13 Aug 2014 04:00:00 -0000
+
+ros-lunar-urg-node (0.1.8-0stretch) stretch; urgency=high
+
+  * Merge pull request #6 <https://github.com/ros-drivers/urg_node/issues/6> from mikeferguson/indigo-devel
+    Add default device status on UST-20LX
+  * Add default device status on UST-20LX
+  * Contributors: Chad Rockey, Michael Ferguson
+
+ -- Tony Baltovski <tony.baltovski@gmail.com>  Mon, 16 Jun 2014 04:00:00 -0000
+
+ros-lunar-urg-node (0.1.7-0stretch) stretch; urgency=high
+
+  * Added more robust plug/unplug reconnect behavior.
+  * Added more robustness and the ability to continually reloop and reconnect until node is shutdown.
+  * Fix initialization crash.
+  * Install fix for Android.
+  * Missed a willowgarage email.
+  * Contributors: Chad Rockey
+
+ -- Tony Baltovski <tony.baltovski@gmail.com>  Mon, 21 Apr 2014 04:00:00 -0000
+
+ros-lunar-urg-node (0.1.6-0stretch) stretch; urgency=high
+
+  * Added getID executable for udev users.
+
+ -- Tony Baltovski <tony.baltovski@gmail.com>  Thu, 24 Oct 2013 04:00:00 -0000
+
+ros-lunar-urg-node (0.1.5-0stretch) stretch; urgency=high
+
+  * Missing diagnostic_updater depend
+
+ -- Tony Baltovski <tony.baltovski@gmail.com>  Thu, 22 Aug 2013 04:00:00 -0000
+
+ros-lunar-urg-node (0.1.4-0stretch) stretch; urgency=high
+
+  * Merge pull request #2 <https://github.com/ros-drivers/urg_node/issues/2> from mitll-ros-pkg/diagnostics
+    Added diagnostics to the URG Node.
+  * Added diagnostics to the URG Node.
+
+ -- Tony Baltovski <tony.baltovski@gmail.com>  Thu, 22 Aug 2013 04:00:00 -0000
+
+ros-lunar-urg-node (0.1.3-0stretch) stretch; urgency=high
+
+  * No more Willow Garage email.
+
+ -- Tony Baltovski <tony.baltovski@gmail.com>  Wed, 21 Aug 2013 04:00:00 -0000
+
+ros-lunar-urg-node (0.1.2-0stretch) stretch; urgency=high
+
+  * Be more tolerant of connection dropouts and try to reconnect.
+  * Fixed poor initilization causing uncertain output.
+  * Updated consts
+
+ -- Tony Baltovski <tony.baltovski@gmail.com>  Thu, 14 Mar 2013 04:00:00 -0000
+
+ros-lunar-urg-node (0.1.1-0stretch) stretch; urgency=high
+
+  * Only advertise for single or multiecho, not both.
+  * Generalized multi echo grab function
+  * Updated to use laser_proc to automatically publish compatibility messages.
+  * Optimize the fill multi echo laserscan message to use reserve instead of resize wherever possible.
+
+ -- Tony Baltovski <tony.baltovski@gmail.com>  Mon, 04 Mar 2013 05:00:00 -0000
+
+ros-lunar-urg-node (0.1.0-0stretch) stretch; urgency=high
+
+  * Added install rules.
+  * Renamed package to urg_node.
+  * Updated to use better timestamping.
+  * Updated to use urg_c name for library.
+  * Added information functions for future diagnostics.
+  * Added experimental timestamp synchronization.  Fixed segfault for multiecho intensity.
+  * Fixed skip being cluster.  Added skip functionallity.
+  * Connected dynamic reconfigure, including angle limit requests.
+  * Added ability to publish both single and multi echo scans.
+  * Added dynamic reconfigure; can update reconfigure limits
+  * Initial commit.  Connecting to both ethernet and serial devices.
+  * Initial commit
+
+ -- Tony Baltovski <tony.baltovski@gmail.com>  Sun, 03 Mar 2013 05:00:00 -0000
+
+
