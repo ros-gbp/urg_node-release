@@ -2,6 +2,11 @@
 Changelog for package urg_node
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.13 (2020-03-27)
+-------------------
+* Revert "fix(updateStatus): Update status on diagnostics update"
+* Contributors: Tony Baltovski
+
 0.1.12 (2020-03-14)
 -------------------
 * Updated roslint to only check files in this repo.
