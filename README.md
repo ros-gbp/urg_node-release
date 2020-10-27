@@ -1,3 +1,26 @@
+## urg_node (noetic) - 0.1.15-1
+
+The packages in the `urg_node` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic -t noetic urg_node -y` on `Tue, 27 Oct 2020 18:22:31 -0000`
+
+The `urg_node` package was released.
+
+Version of package(s) in repository `urg_node`:
+
+- upstream repository: https://github.com/ros-drivers/urg_node.git
+- release repository: https://github.com/ros-gbp/urg_node-release.git
+- rosdistro version: `0.1.14-1`
+- old version: `0.1.14-1`
+- new version: `0.1.15-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.0`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## urg_node (melodic) - 0.1.15-1
 
 The packages in the `urg_node` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -r melodic -t melodic urg_node` on `Tue, 27 Oct 2020 18:16:13 -0000`
